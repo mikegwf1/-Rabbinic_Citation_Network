@@ -1,0 +1,1 @@
+rabbi_quote_with_ids.xlsx - Spreadsheet of all citations found in the Talmud.
