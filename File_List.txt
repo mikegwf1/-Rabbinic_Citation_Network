@@ -1,1 +1,6 @@
-rabbi_quote_with_ids.xlsx - Spreadsheet of all citations found in the Talmud.
+File_List.txt - This file which contains a list of all files in repository with short description.
+AllNameReferences.xlsx - Spreadsheet of all rabbi name references found in Talmudic text. "Rabbi Name after Link" refers to the canonical form of the rabbi's name in the Rabbi Tagging Database.
+Reference_Counts_By_Afterlinkid.xlsx - Spreadsheet of the count of references in the Talmudic text by canonical rabbi name.
+Tractate Rabbi Reference Count.xlsx - Spreadsheet of the count of references in the Talmudic text by canonical rabbi name and tractate.
+Rabbi Intervals.xlsx - Spreadsheet of all occurrences of 2 rabbi names within 5 tokens of each other in the Talmudic text.
+rabbi_quote_with_ids.xlsx - Spreadsheet of all citations found in the Talmudic text.
