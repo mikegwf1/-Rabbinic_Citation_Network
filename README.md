@@ -5,9 +5,13 @@ In this project we identify rabbinic citations in the Bavli Talmud and identify 
 
 This Github project contains the code and source data necessary to produce the output files used for analysis.  The results of the analysis can be seen at http://www.rabbiniccitations.jewishstudies.digitalscholarship.brown.edu/blog  That site also has links to several of the output datasets that are archived in ResearchGate.
 
-### Data Files (in data folder)
+There are 2 major steps in creating the output files.
 
-talmud.json - a json file containing all of the standard text of the Babylonian Talmud.  This file is provided courtesy of Sefaria and is licensed CC-BY-NC from The William Davidson digital edition of the Koren Noé Talmud, with commentary by Rabbi Adin Even-Israel Steinsaltz.
+1.
+
+The first step involves expanding /data/talmud.json, which is a json file containing all of the standard text of the Babylonian Talmud, to individual, cleaned up text files for each tractate.  This file is provided courtesy of Sefaria and is licensed CC-BY-NC from The William Davidson digital edition of the Koren Noé Talmud, with commentary by Rabbi Adin Even-Israel Steinsaltz.  Download talmud.json .
+
+The code for expanding is in /src/ExpandSefaria.zip .  Download and expand that file.  In /globals/Parameters.java , set the last 3 parametRun src/mains/ProcessDavidsonSefariaMain
 
 ### Code Files (in src folder)
 
