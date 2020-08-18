@@ -11,9 +11,6 @@ There are 2 major steps in creating the output files.
 
 The first step involves expanding /data/talmud.json, which is a json file containing all of the standard text of the Babylonian Talmud, to individual, cleaned up text files for each tractate.  This file is provided courtesy of Sefaria and is licensed CC-BY-NC from The William Davidson digital edition of the Koren Noé Talmud, with commentary by Rabbi Adin Even-Israel Steinsaltz.  Download talmud.json .
 
-The code for expanding is in /src/ExpandSefaria.zip .  Download and expand that file.  In /globals/Parameters.java , set the last 3 parametRun src/mains/ProcessDavidsonSefariaMain
+The code for expanding is in /src/ExpandSefaria.zip .  Download and expand that file.  In /globals/Parameters.java , set the last 3 parameters in src/mains/ProcessDavidsonSefariaMain
 
-### Code Files (in src folder)
-
-SNA_Citation_Network_002.jar - Java code used in project.  Please contact mike.sperling@rocketmail.com for more information.
 
