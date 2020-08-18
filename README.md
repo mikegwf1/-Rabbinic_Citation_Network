@@ -11,13 +11,28 @@ There are 2 major steps in creating the output files.
 
 The first step involves expanding /data/talmud.json, which is a json file containing all of the standard text of the Babylonian Talmud, to individual, cleaned up text files for each tractate.  This file is provided courtesy of Sefaria and is licensed CC-BY-NC from The William Davidson digital edition of the Koren Noé Talmud, with commentary by Rabbi Adin Even-Israel Steinsaltz.  Download talmud.json .
 
-The code for expanding is in /src/ExpandSefaria.zip .  Download and expand that file.  In /globals/Parameters.java , set 2 parameters (ignore the rest):
+The Java code for expanding is in /src/ExpandSefaria.zip .  Download and expand that file.  In /src/globals/Parameters.java , set 2 parameters (ignore the rest):
 inputSefariaDavidsonTalmudPath - complete path to folder where talmud.json is located
 outputSefariaDavidsonTalmud - complete path to folder that will contain the individual tractate files
 
-Run /mains/ProcessDavidsonSefariaMain to accomplish the expansion.
+Run /src/mains/ProcessDavidsonSefariaMain to accomplish the expansion.
 
 This program requires the libraries gson-2.8.2.jar and commons-io-2.5.jar which are located in the /lib folder
+
+2.
+The second step generates the files for analysis from the expanded tractate files.  It is implemented by the code in /src/FindQuotes.zip and executed by running /src/mains/GetRabbiCountsMain. This program requires a number of inputs as follows:
+
+a) A set of lists which will be located in the file system.  Edit topFolder and subFolder in /src/globals/Parameters.java to point to a folder which will contain these lists. As you can see in Parameters, topFolder and subFolder are concatenated in activeFolder.  Under activeFolder create a folder called "lists_sefaria". Copy the files contained in the Github /lists/ folder to your "lists_sefaria" folder.  These files are as follows:
+
+prefixMap.txt - located in /lists/ - accounts for prefixed Rabbi names
+linkMap.txt - located in /lists/ - links variant forms of Rabbi names to canonical Rabbi names
+The rest of the files are pattern file inputs to the Gate natural language package (https://gate.ac.uk/) which we use for pattern matching. 
+
+
+
+
+
+
 
 
 
