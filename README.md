@@ -28,7 +28,9 @@ prefixMap.txt - located in /lists/ - accounts for prefixed Rabbi names
 linkMap.txt - located in /lists/ - links variant forms of Rabbi names to canonical Rabbi names
 The rest of the files are entity file inputs to the Gate natural language package (https://gate.ac.uk/) which we use for pattern matching. 
 
-b) A set of jape files - pattern file inputs to Gate, which define the patterns that we expect denote quotes in the text.  Create a folder called "jape" under activeFolder and copy the files in the Github /jape/ folder into it.
+b) A set of jape files which will be located in the file system. Jape files are pattern file inputs to Gate, which define the patterns that we expect denote quotes in the text.  Create a folder called "jape" under activeFolder and copy the files in the Github /jape/ folder into it.
+
+c) GetRabbiCountsMain also utilizes a MySql database (https://www.mysql.com/), reading a Rabbis table containing all rabbis in our database of rabbis and writing a Citations table which contains all instances GetRabbiCountsMain located of rabbi names in the Talmudic text and a Rabbi_intervals table which contains all instances where rabbi instances were located within 5 words of one another.  Create a MySql schema and import the populated rabbis table and the empty Citations Rabbi_intervals table from the Github /db/ folder.
 
 
 
