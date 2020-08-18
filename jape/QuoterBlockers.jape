@@ -1,0 +1,11 @@
+Phase:QuoterBlockers
+Input: Lookup Token
+Options: control = Appelt
+
+Rule: QuoterBlockersMatch1
+Priority: 25
+(
+  ({Lookup.majorType == quoter_blocker}):y1
+)
+-->
+:y1.QuoterBlockerMatch = {rule = "QuoterBlockerMatch1"}

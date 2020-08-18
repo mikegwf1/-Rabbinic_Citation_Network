@@ -1,0 +1,11 @@
+Phase:RabbiTargetNames
+Input: Lookup Token
+Options: control = Appelt
+
+Rule: RabbiTargetMatch1
+Priority: 25
+(
+  ({Lookup.majorType == rabbi_target}):y1
+)
+-->
+:y1.RabbiTargetMatch = {rule = "RabbiTargetMatch1"}

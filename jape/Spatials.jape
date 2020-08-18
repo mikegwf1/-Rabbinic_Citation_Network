@@ -1,0 +1,11 @@
+Phase:Spatials
+Input: Lookup Token
+Options: control = Appelt
+
+Rule: SpatialsMatch1
+Priority: 25
+(
+  ({Lookup.majorType == spatial}):y1
+)
+-->
+:y1.SpatialMatch = {rule = "SpatialMatch1"}

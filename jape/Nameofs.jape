@@ -1,0 +1,11 @@
+Phase:Nameofs
+Input: Lookup Token
+Options: control = Appelt
+
+Rule: NameofsMatch1
+Priority: 25
+(
+  ({Lookup.majorType == nameof}):y1
+)
+-->
+:y1.NameofMatch = {rule = "NameofMatch1"}

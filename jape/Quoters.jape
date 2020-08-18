@@ -1,0 +1,11 @@
+Phase:Quoters
+Input: Lookup Token
+Options: control = Appelt
+
+Rule: QuotersMatch1
+Priority: 25
+(
+  ({Lookup.majorType == quoter}):y1
+)
+-->
+:y1.QuoterMatch = {rule = "QuoterMatch1"}

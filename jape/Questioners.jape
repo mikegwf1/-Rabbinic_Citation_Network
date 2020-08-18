@@ -1,0 +1,11 @@
+Phase: Questioners
+Input: Lookup Token
+Options: control = Appelt
+
+Rule: QuestionersMatch1
+Priority: 25
+(
+  ({Lookup.majorType == questioner}):y1
+)
+-->
+:y1.QuestionerMatch = {rule = "QuestionerMatch1"}

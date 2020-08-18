@@ -1,0 +1,11 @@
+Phase:Actions
+Input: Lookup Token
+Options: control = Appelt
+
+Rule: ActionsMatch1
+Priority: 25
+(
+  ({Lookup.majorType == action}):y1
+)
+-->
+:y1.ActionMatch = {rule = "ActionMatch1"}

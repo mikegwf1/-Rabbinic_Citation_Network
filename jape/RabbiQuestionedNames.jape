@@ -1,0 +1,11 @@
+Phase:RabbiQuestionedNames
+Input: Lookup Token
+Options: control = Appelt
+
+Rule: RabbiQuestionedMatch1
+Priority: 25
+(
+  ({Lookup.majorType == rabbi_questioned}):y1
+)
+-->
+:y1.RabbiQuestionedMatch = {rule = "RabbiQuestionedMatch1"}

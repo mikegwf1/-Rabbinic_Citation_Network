@@ -1,0 +1,15 @@
+Phase:RabbiSpans
+Input: Lookup Token RabbiMatch
+Options: control = All
+
+Rule: RabbiSpans1
+Priority: 25
+(
+  ({RabbiMatch}):y1
+  ({Token})[0,5]
+  ({RabbiMatch}):y2
+):xx
+-->
+:xx.RabbiSpanMatch = {rule = "RabbiSpans1"},
+:y1.RabbiMatch1 = {rule = "RabbiSpans1"},
+:y2.RabbiMatch2 = {rule = "RabbiSpans1"}
