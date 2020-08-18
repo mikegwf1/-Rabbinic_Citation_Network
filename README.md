@@ -5,7 +5,7 @@ In this project we identify rabbinic citations in the Bavli Talmud and identify 
 
 This Github project contains the code and source data necessary to produce the output files used for analysis.  The results of the analysis can be seen at http://www.rabbiniccitations.jewishstudies.digitalscholarship.brown.edu/blog  That site also has links to several of the output datasets that are archived in ResearchGate.
 
-There are 2 major steps in creating the output files.
+There are 3 major steps in creating the output files.
 
 1.
 
@@ -17,7 +17,7 @@ outputSefariaDavidsonTalmud - complete path to folder that will contain the indi
 
 Run /src/mains/ProcessDavidsonSefariaMain to accomplish the expansion.
 
-This program requires the libraries gson-2.8.2.jar and commons-io-2.5.jar which are located in the /lib folder
+This program requires the libraries gson-2.8.2.jar and commons-io-2.5.jar which are located in the Github /lib/ folder
 
 2.
 The second step generates the files for analysis from the expanded tractate files.  It is implemented by the code in /src/FindQuotes.zip and executed by running /src/mains/GetRabbiCountsMain. This program requires a number of inputs as follows:
@@ -30,7 +30,19 @@ The rest of the files are entity file inputs to the Gate natural language packag
 
 b) A set of jape files which will be located in the file system. Jape files are pattern file inputs to Gate, which define the patterns that we expect denote quotes in the text.  Create a folder called "jape" under activeFolder and copy the files in the Github /jape/ folder into it.
 
-c) GetRabbiCountsMain also utilizes a MySql database (https://www.mysql.com/), reading a Rabbis table containing all rabbis in our database of rabbis and writing a Citations table which contains all instances GetRabbiCountsMain located of rabbi names in the Talmudic text and a Rabbi_intervals table which contains all instances where rabbi instances were located within 5 words of one another.  Create a MySql schema and import the populated rabbis table and the empty Citations Rabbi_intervals table from the Github /db/ folder.
+c) GetRabbiCountsMain also utilizes a MySql database (https://www.mysql.com/), reading a Rabbis table containing all rabbis in our database of rabbis and writing a Citations table which contains all instances GetRabbiCountsMain located of rabbi names in the Talmudic text and a Rabbi_intervals table which contains all instances where rabbi instances were located within 5 words of one another.  Create a MySql schema and import the populated rabbis table and the empty Citations Rabbi_intervals table from the Github /db/ folder.  Edit dbName in /src/globals/Parameters.java to contain the name of the schema.
+
+d) The tractate level files created in step 1.  Edit taCorporaFolder in /src/globals/Parameters.java to point to the location of these files
+
+GetRabbiCountsMain will also create a number of output files.  Create a folder called "output_sefaria" under activeFolder to hold these outputs. 
+
+Finally, GetRabbiCountsMain requires the following libraries which are located in the Github /lib/ folder:
+common-io-2.5.jar
+gate.jar
+commons-codec-1.11.jar
+jheatchart-0.6.jar
+
+Run GetRabbiCountsMain to generate the analysis files and populate the MySql tables.
 
 
 
