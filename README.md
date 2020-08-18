@@ -26,7 +26,9 @@ a) A set of lists which will be located in the file system.  Edit topFolder and 
 
 prefixMap.txt - located in /lists/ - accounts for prefixed Rabbi names
 linkMap.txt - located in /lists/ - links variant forms of Rabbi names to canonical Rabbi names
-The rest of the files are pattern file inputs to the Gate natural language package (https://gate.ac.uk/) which we use for pattern matching. 
+The rest of the files are entity file inputs to the Gate natural language package (https://gate.ac.uk/) which we use for pattern matching. 
+
+b) A set of jape files - pattern file inputs to Gate, which define the patterns that we expect denote quotes in the text.  Create a folder called "jape" under activeFolder and copy the files in the Github /jape/ folder into it.
 
 
 
