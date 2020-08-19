@@ -21,7 +21,7 @@ This program requires the libraries gson-2.8.2.jar and commons-io-2.5.jar which 
 
 2.
 
-The second step generates the files for analysis from the expanded tractate files.  It is implemented by the code in /src/FindQuotes.zip and executed by running /src/mains/GetRabbiCountsMain. This program requires a number of inputs as follows:
+The second step generates the files for analysis from the expanded tractate files.  It is implemented by the code in the Github folder /src/FindQuotes.zip and executed by running /src/mains/GetRabbiCountsMain. This program requires a number of inputs as follows:
 
 a) A set of lists which will be located in the file system.  Edit topFolder and subFolder in /src/globals/Parameters.java to point to a folder which will contain these lists. As you can see in Parameters, topFolder and subFolder are concatenated in activeFolder.  Under activeFolder create a folder called "lists_sefaria". Copy the files contained in the Github /lists/ folder to your "lists_sefaria" folder.  These files are as follows:
 
