@@ -1,0 +1,12 @@
+The spreadsheets in the 2020 and 2022 subfolders contain the following data:
+
+rabbi quote with ids - Spreadsheet of all citations found in the Talmudic text.
+
+Reference Counts By Afterlinkid - Spreadsheet of the count of references in the Talmudic text by canonical rabbi name.
+
+Rabbi Intervals - Spreadsheet of all occurrences of 2 rabbi names within 5 tokens of each other in the Talmudic text.
+
+AllNameReferences - Spreadsheet of all rabbi name references found in Talmudic text. 
+"Rabbi Name after Link" refers to the canonical form of the rabbi's name in the Rabbi Tagging Database.
+
+Tractate Rabbi Reference Count - Spreadsheet of the count of references in the Talmudic text by canonical rabbi name and tractate.
