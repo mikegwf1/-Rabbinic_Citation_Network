@@ -5,12 +5,13 @@ In this project we identify rabbinic citations in the Bavli Talmud and identify 
 
 This Github project contains the code and source data necessary to produce the output files used for analysis.  The results of the analysis can be seen at http://www.rabbiniccitations.jewishstudies.digitalscholarship.brown.edu/blog  That site also has links to several of the output datasets that are archived in ResearchGate.
 
-Update 3/14/2023
+## Update 3/14/2023
+
 The spreadsheets containing our results have been moved from ResearchGate to the spreadsheets folder in this Github project.  The spreadsheets folder contains the file "description" which contains the description of the spreadsheets and folders "2020" and "2022".  The 2020 folder contains the data as originally generated and which was used in the paper:
 Satlow, Michael L. and Michael Sperling. "The Rabbinic Citation Network." AJS Review: The Journal of the Association for Jewish Studies, vol. 46 no. 2, 2022, p. 291-319. Project MUSE, doi:10.1353/ajs.2022.0044.
 The 2022 folder contains an updated set of this data and will be used in an upcoming article by Satlow and Sperling.
 
-There are 3 major steps in creating the output files.
+### There are 3 major steps in creating the output files.
 
 1.
 
